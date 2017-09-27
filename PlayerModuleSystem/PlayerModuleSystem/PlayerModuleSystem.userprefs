@@ -1,0 +1,23 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/SQLite.cs">
+    <Files>
+      <File FileName="Assets/Script/ModelSelector.cs" Line="40" Column="9" />
+      <File FileName="Assets/Script/SQLite.cs" Line="1414" Column="16" />
+      <File FileName="Assets/Script/UserProfileUI.cs" Line="38" Column="16" />
+      <File FileName="Assets/Script/UXController.cs" Line="38" Column="22" />
+      <File FileName="Assets/Script/DataService.cs" Line="133" Column="21" />
+      <File FileName="Assets/Script/SelectionProfileUI.cs" Line="55" Column="31" />
+      <File FileName="Assets/Script/UserLoginUI.cs" Line="16" Column="32" />
+      <File FileName="Assets/Script/UserData.cs" Line="8" Column="2" />
+      <File FileName="Assets/Script/PurchaseInfo.cs" Line="5" Column="22" />
+      <File FileName="Assets/Script/UserObject.cs" Line="7" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/arun/Anand/1Localrep/1Live/PlayerModuleSystem/PlayerModuleSystem/Assets/Script/DataService.cs" line="68" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
