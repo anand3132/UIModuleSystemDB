@@ -101,16 +101,6 @@ public class DataService  {
 		}
 		return -1;
 	}
-//		public int GetObjectLevelForUser(string userID,int objectLevel) {
-//		IEnumerable<PurchaseInfo> rows = _connection.Table<PurchaseInfo>();
-//		foreach(PurchaseInfo p in rows) {
-//			if (p.userId == userID) {
-//		return p.objectLevel;
-//			}
-//		}
-//		return -1;
-//	}
-//
 
 	public List<PurchaseInfo> GetPurchaseInfo(string userID) {
 		IEnumerable<PurchaseInfo> rows = _connection.Table<PurchaseInfo>();
@@ -132,13 +122,7 @@ public class DataService  {
 	public void UpdatePurchace(PurchaseInfo p) {
 		_connection.Update(p);
 	}
-//	public  void RemovePurchase(string userId,string objects, int objectLevel){
-//		UserData user = GetUser(userId);
-//		if (user != null) {
-//			var p = new PurchaseInfo{ userId = userId, objects = objects, objectLevel = objectLevel };
-//			_connection.(p);
-//		}
-//	}
+
 	public PurchaseInfo CreatePurchase(string userId, int coins, string objects, int objectLevel) {
 		UserData user = GetUser(userId);
 		if (user != null) {

@@ -15,31 +15,27 @@ public class UXController : MonoBehaviour {
 		SwitchToUserLogin();
 	}
 
-	public void SwitchToUserLogin(){
+	public void SwitchToUserLogin() {
 		loginProfileUI.gameObject.SetActive(true);
 		userProfileUI.gameObject.SetActive(false);
 		selectionProfileUI.gameObject.SetActive(false);
 		modelSet.gameObject.SetActive(false);
 	}
-	public void SwitchToUserProfileUI(){
+	public void SwitchToUserProfileUI() {
 		loginProfileUI.gameObject.SetActive(false);
 		userProfileUI.gameObject.SetActive(true);
 		selectionProfileUI.gameObject.SetActive(false);
 		modelSet.gameObject.SetActive(false);
 	}
-	public void SwitchToSelectionProfileUI(){
+	public void SwitchToSelectionProfileUI() {
 		loginProfileUI.gameObject.SetActive(false);
 		userProfileUI.gameObject.SetActive(false);
 		selectionProfileUI.gameObject.SetActive(true);
 		modelSet.gameObject.SetActive(true);
 	}
 
-	public void AddButtonPressed(){
+	public void AddButtonPressed() {
 		selectionProfileUI.AddObject();
 		SwitchToUserProfileUI();
-	}
-	public void PlayButtonPressed(){
-		
-		Debug.Log("As there is no game I am incrementing the level");
 	}
 }

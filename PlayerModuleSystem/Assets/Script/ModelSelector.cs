@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ModelSelector : MonoBehaviour {
-
 	public Vector3 axis = new Vector3(0, 1, 0);
 	public float speed = 10;
 	public List<GameObject> array;
 	public GameObject selectedModel=null;
-	public Vector3 modelData=new Vector3(0,0,0);//cost,health,damage
-
+	public Vector3 modelData=new Vector3(0,0,0); //cost, health, damage
 
 	void Start() {
 		Reset();
@@ -23,6 +21,7 @@ public class ModelSelector : MonoBehaviour {
 			g.SetActive(false);
 		}
 	}
+
 	public void EnableObject(int index) {
 		if (index<0 || index>=array.Count) {
 			return;
@@ -34,7 +33,7 @@ public class ModelSelector : MonoBehaviour {
 		array[index].SetActive(true);
 	}		
 
-	public Vector3 GetUpdateCost(int level){
+	public Vector3 GetUpdateCost(int level) {
 		Vector3 updateData=new Vector3(0,0,0);
 		switch(level){
 		case 0:{
@@ -59,7 +58,8 @@ public class ModelSelector : MonoBehaviour {
 		}
 		return updateData;
 	}
-	public Vector3 GetModelData(GameObject model){
+
+	public Vector3 GetModelData(GameObject model) {
 		switch(model.name){
 		case "Cube":{
 				modelData=new Vector3(20,44,120);
@@ -84,10 +84,9 @@ public class ModelSelector : MonoBehaviour {
 		}
 		return modelData;
 	}
+
 	// Update is called once per frame
-	void Update (){
+	void Update () {
 		selectedModel.transform.Rotate(Vector3.up, speed);
 	}
-		
-
 }

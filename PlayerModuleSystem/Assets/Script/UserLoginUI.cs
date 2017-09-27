@@ -17,6 +17,7 @@ public class UserLoginUI : MonoBehaviour {
 		}
 		addButtonText.text="+";
 	}
+
 	public string GetUserID() {
 		return userName.text;
 	}
